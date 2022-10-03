@@ -36,10 +36,10 @@ function App() {
   return (
 
     <div className="App min-h-screen	bg-red-600">
+      
+      <BrowserRouter>
       <Navbar/>
       <Searcbar/>
-      <BrowserRouter>
-
       <Routes>
         <Route path='/' element={<Pokedex/>}/>
         <Route path='/:page' element={<Pokedex/>}/>

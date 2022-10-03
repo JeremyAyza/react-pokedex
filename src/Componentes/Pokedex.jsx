@@ -9,7 +9,7 @@ export default function Pokedex() {
   const params=useParams()
 
 
-  const fetchPokemons=async(page=1)=>{
+  const fetchPokemons=async(page)=>{
     try {
       let min=10*page-9
       let max=page*10
@@ -36,7 +36,7 @@ export default function Pokedex() {
 
     }
     else{
-      fetchPokemons()
+      fetchPokemons(1)
     }
       
     
@@ -61,6 +61,7 @@ export default function Pokedex() {
       }
       
     </div>
+    
     
   )
 }
