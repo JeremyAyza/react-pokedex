@@ -20,19 +20,27 @@ export default function PokemonCard({ data }) {
 
 
 
-    <div className="flex justify-between items-center    bg-slate-200 m-1 rounded-md w-96 h-36 capitalize	shadow-xl">
-      <div className="px-3 py-2">
-        <div><b>#:{id}</b></div>
-        <div><b>Name:</b> {name}</div>
-        <div><b>Types:</b> {types}</div>
-        <div><b>Abilities:</b> {abilities}</div>
+    <div className="flex  items-center font-semibold  px-3  bg-slate-200 m-1 rounded-md w-80 h-36 capitalize	shadow-xl ">
+      
+      <div className='border-zinc-800 mx-2'>
+        <img src={urlImg} alt="" className="" />
+      </div>
+
+      
+      <div className='border-zinc-800 grow mx-2'>
+        <div className='text-red-600 text-xl'>{name}</div>
+        <div className='text-blue-600'>{types}</div>
+        <div></div>
+      </div>
+
+      <div className="border-zinc-800 mx-2">
+        <div><b>#{id}</b></div>
         <div>🖤</div>
 
       </div>
+      
 
-      <div>
-        <img src={urlImg} alt="" className="px-1" />
-      </div>
+      
     </div>
 
 

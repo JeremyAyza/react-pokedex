@@ -30,6 +30,16 @@ function App() {
     console.log(params);
   }, [])
   
+  const paginas=()=>{
+    const array=[]
+    for (let i = 1; i <= 10; i++) {
+      array.push(
+      <Link to={`/${i}`}><button className='bg-amber-400 p-2 rounded-sm m-1'>{i}</button></Link>
+      )
+    }
+    return array
+  }
+  
   
  
 
@@ -40,16 +50,15 @@ function App() {
       <BrowserRouter>
       <Navbar/>
       <Searcbar/>
+      <div>
+        Paginas:{paginas()}
+      </div>
+      <div className='flex items-center justify-center'>
       <Routes>
         <Route path='/' element={<Pokedex/>}/>
         <Route path='/:page' element={<Pokedex/>}/>
-      </Routes>
-      <div>
-        Pagina:
-        <Link to="/2"><button className='bg-amber-400 p-3'>2</button></Link>
-        <Link to="/3"><button className='bg-amber-400 p-3'>3</button></Link>
-      </div>
-      
+      </Routes>     
+      </div> 
       </BrowserRouter>
       
 
