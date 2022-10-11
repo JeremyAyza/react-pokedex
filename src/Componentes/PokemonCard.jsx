@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { FavoritesContext } from '../Context/favoritesContex';
 
 
 
 
 export default function PokemonCard({ data }) {
+
+  const {favoritos} = useContext(FavoritesContext)
+
   const id = data.id
   const name = data.name;
   const urlImg = data.sprites.front_default
   const types = data.types.map(e => {
     return e.type.name
   }).join(", ")
-  const abilities = data.abilities.map(e => {
-    return e.ability.name
-  }).join(", ")
+  // const abilities = data.abilities.map(e => {
+  //   return e.ability.name
+  // }).join(", ")
 
+  const liked="❤"
+  const noLiked="🖤"
+  const heart=favoritos.includes(data.name)? liked:noLiked;
 
   return (
 
@@ -35,7 +42,7 @@ export default function PokemonCard({ data }) {
 
       <div className="border-zinc-800 mx-2">
         <div><b>#{id}</b></div>
-        <div>🖤</div>
+        <div>{heart}</div>
 
       </div>
       

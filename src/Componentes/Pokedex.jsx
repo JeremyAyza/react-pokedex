@@ -30,24 +30,19 @@ export default function Pokedex() {
   
   
   useEffect(() => {
-    setLoading(true)
     
-    if (params.page){
-      let page=params.page
-      if(page>0 && page<=10){
-        fetchPokemons(page)
-        setTimeout(() => {
-          setLoading(false)
-        }, 500);
-        
-      }
-
-
+    setLoading(true)
+    let page=1
+    if(params.page) {
+      page=params.page;
     }
-    else{
-      fetchPokemons(1)
-    }
+    
+      fetchPokemons(page)
+      setTimeout(() => {
+        setLoading(false)
+      }, 5000);
       
+  
     
     
   }, [params.page])
@@ -56,10 +51,13 @@ export default function Pokedex() {
   
 
   return (
-    <div className='flex flex-wrap p-1 items-center  justify-around max-w-6xl'>
-      <h2>POKEDEX:</h2>
-      {
 
+   
+    
+    <div className='flex flex-wrap p-1 items-center  justify-around max-w-6xl'>
+      
+      {
+        
         loading?(<div className='mt-3'><strong>CARGANDO. . .</strong></div>):
         pokemons.map((poke)=>{
           return(
@@ -73,6 +71,7 @@ export default function Pokedex() {
       }
       
     </div>
+    
     
     
   )
