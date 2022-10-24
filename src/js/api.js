@@ -2,11 +2,13 @@ export const searchPoke = async (p) => {
 	let url = `https://pokeapi.co/api/v2/pokemon/${p}`
 	try {
 		const response = await fetch(url)
+		if(response.status==404){
+			return false
+		}
 		const data = await response.json()
-
 		return data
 	} catch (error) {
-
+		return false
 	}
 }
 

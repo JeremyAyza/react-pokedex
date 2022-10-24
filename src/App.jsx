@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
 import Searcbar from './Componentes/Searchbar';
-// import Pokedex from './Componentes/Pokedex'
-// import { getDataPokemon, getPokemones } from "./js/api";
+
 import Navbar from './Componentes/Navbar';
 import Pokedex from './Componentes/Pokedex';
-import { BrowserRouter, Routes,Route, Link, useParams } from 'react-router-dom';
+import { BrowserRouter, Routes,Route, Link} from 'react-router-dom';
 import { FavoriteProvider } from './Context/favoritesContex';
 
 
@@ -13,24 +12,22 @@ import { FavoriteProvider } from './Context/favoritesContex';
 
 function App() {
 
-  // funciones
- 
-  // const fetchPokemons=async()=>{
-  //   try {
-  //     const data=await getPokemons()
-  //     setDataPokemons(data.results)
-  //     console.log(data.results);
-  //   } catch (error) {
-      
-  //   }
-  // }
+  const [favoritos, setFavoritos] = useState([])
 
-  const params=useParams()
-  const [favoritos, setFavoritos] = useState(["bulbasaur","raichu"])
   const updateFavoritos=(name)=>{
-    console.log(name);
+    const newFavorites=[...favoritos];
+    let i=newFavorites.indexOf(name)
+    if(i>=0){
+      newFavorites.splice(i,1)
+    }
+    else{
+      newFavorites.push(name)
+    }
+    setFavoritos(newFavorites)
+    window.localStorage.setItem("keyPokemon", JSON.stringify(newFavorites))
   }
-  
+   
+
   
   const paginas=()=>{
     const array=[]
@@ -41,7 +38,17 @@ function App() {
     }
     return array
   }
+
   
+
+  useEffect(() => {
+    const pokemons=JSON.parse(window.localStorage.getItem("keyPokemon")) || [];
+    setFavoritos(pokemons);
+    
+  },[])
+  
+
+
   
  
 
