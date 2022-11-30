@@ -47,7 +47,7 @@ export default function Searcbar() {
 			<div className="mx-3 m-1 ">
 
 				<input type="text"
-					placeholder="Buscar Pokemón"
+					placeholder="Search Pokemón"
 					onChange={onChangeSearch}
 					className="border  rounded-md shadow-sm py-1 px-2 placeholder:italic capitalize"
 				/>
