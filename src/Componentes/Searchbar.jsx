@@ -22,7 +22,6 @@ export default function Searcbar() {
 	const onChangeSearch = (e) => {
 		if (e.target.value !== "") {
 			setSearch(e.target.value.toLowerCase())
-
 		}
 	}
 

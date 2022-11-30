@@ -12,6 +12,17 @@ code {
     monospace;
 } */
 
+.img-pokedex{
+	width: 180px;
+}
+
+@media (min-width:700px) {
+	.img-pokedex{
+		width: 300px
+	}
+	
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
