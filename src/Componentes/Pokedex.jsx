@@ -34,12 +34,13 @@ export default function Pokedex() {
 		}
 		else if(parseInt(params.page)&& params.page>=1 && params.page<=50){
 			fetchPokemons(params.page)  
+			setValidPage(true)
 		}
 		else{
 			setValidPage(false)
 		}
 		
-  },[params.page])
+  },[params.page,params])
 
 	const result = (validPage,loading)=>{
 		let rpt

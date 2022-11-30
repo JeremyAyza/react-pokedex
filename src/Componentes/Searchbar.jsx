@@ -42,7 +42,7 @@ export default function Searcbar() {
 
 
 	return (
-		<div className="bg-amber-400 p-1  flex items-center  flex-wrap justify-around" >
+		<div className="bg-amber-400 p-1  flex items-center  flex-wrap justify-around drop-shadow-lg border border-" >
 
 			<div className="mx-3 m-1 ">
 

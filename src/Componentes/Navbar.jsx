@@ -14,8 +14,8 @@ export default function Navbar() {
 		<nav
 			className="flex items-center justify-between bg-slate-900 object-center px-3">
 			<img className='img-pokedex' src={urlImgPokedex} alt="Pokedex" />
-			<div className='text-white pr-2'>
-				Favoritos ❤ : {favoritos.length}
+			<div className='text-white pr-2 font-semibold'>
+				Favorites ❤ : {favoritos.length}
 			</div>
 		</nav>
 	)

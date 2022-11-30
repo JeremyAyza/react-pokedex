@@ -31,7 +31,7 @@ function App() {
 		const array = []
 		for (let i = 1; i <= 10; i++) {
 			array.push(
-				<Link to={`/${i}`} key={i}><button className='bg-red-600 font-semibold rounded-full m-1 w-9 p-1 text-white border-black border-2'>{i}</button></Link>
+				<Link to={`/${i}`} key={i}><button className='bg-red-600 font-semibold rounded-full m-1 w-9 p-1 text-white border-black border-2 drop-shadow-md '>{i}</button></Link>
 			)
 		}
 		return array
@@ -60,13 +60,14 @@ function App() {
 				<BrowserRouter>
 					<Navbar />
 					<Searcbar />
-					<h2 className='text-center font-semibold text-3xl' > LISTA DE POKEMONS:</h2>
-					<div className='flex justify-center'>
-						<div className='w-5/6'>
-							<h3 className='font-semibold p-1 text-xl border text-white inline m-1'>Páginas:</h3>
-							<div className='border m-1'>{paginas()}</div>
+					<div className='flex justify-center items-center my-3 '>
+						<div className='mx-12'>
+							<h3 className='font-semibold p-1  text-xl text-white inline m-1'>Pages:</h3>
+							<div className=' m-1  inline-block'>{paginas()}</div>
 						</div>
 					</div>
+					{/*<h2 className='text-center font-medium text-4xl my-5 italic text-amber-700' >Pokemon Data:</h2>*/}
+
 
 					<div className='flex items-center justify-center '>
 

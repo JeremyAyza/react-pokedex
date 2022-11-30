@@ -23,7 +23,7 @@ export default function PokemonCard({ data }) {
   }
 
   return (
-    <div className="flex  items-center font-semibold  px-3  bg-slate-200 m-1 rounded-md w-80 h-36 capitalize	shadow-xl ">
+		<div className="flex  items-center font-semibold  px-3  bg-slate-200 m-2 rounded-md w-80 h-36 capitalize	shadow-xl drop-shadow-2xl  ">
       
       <div className='border-zinc-800 mx-2'>
         <img src={urlImg} alt="" className="" />
