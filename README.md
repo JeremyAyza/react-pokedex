@@ -7,10 +7,10 @@ Made with React and Tailwind
 
 
 
-<img src="/imgs/pokedex_1.png" height="150" />
-<img src="/imgs/pokedex_2.png" height="150" />
+<img src="/imgs/pokedex_1.PNG" height="150" />
+<img src="/imgs/pokedex_2.PNG" height="150" />
 
-<img src="/imgs/pokedex_1.png" height="150" />
+<img src="/imgs/pokedex_1.PNG" height="150" />
 
 
 
