@@ -3,14 +3,14 @@ This project is the front end of an administration system using React-Router-Dom
 
 Made with React and Tailwind 
 <div align="center">
-<img src="/imgs/Pokedex 1.png" height="150" />
+<img src="/imgs/pokedex_1.png" height="150" />
 
 
 
-<img src="/imgs/Pokedex 1.png" height="150" />
-<img src="/imgs/Pokedex 2.png" height="150" />
+<img src="/imgs/pokedex_1.png" height="150" />
+<img src="/imgs/pokedex_2.png" height="150" />
 
-<img src="/imgs/Pokedex 1.png" height="150" />
+<img src="/imgs/pokedex_1.png" height="150" />
 
 
 
