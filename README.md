@@ -1,14 +1,3 @@
-# POKÉDEX PAGE  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title="React" alt="React" width="35" height="35"/>  <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg" title="React" alt="React" width="35" height="35"/>
-This project is the front end of an administration system using React-Router-Dom and React-Icons
-
-Made with React and Tailwind 
-<div align="center">
-
-<img src="/imgs/pokedex_3.png" height="350" />
-
-<img src="/imgs/pokedex_2.PNG" height="250" />
-
-</div>
 
 
 <h1 align="center">🔍 Pokédex React</h1>
@@ -24,7 +13,7 @@ Made with React and Tailwind
 
 ### 📸 Demo
 
-![demo](./screenshot.png) <!-- Puedes reemplazar esto con un GIF o captura animada -->
+![demo](./imgs/pokedex_2.PNG) <!-- Puedes reemplazar esto con un GIF o captura animada -->
 
 > 🚀 Próximamente: [live demo link]
 
@@ -72,7 +61,7 @@ npm run start
 ```
 
 ### 🧠 Aprendizajes y Retos
-Implementación de ruteo dinámico con react-router-dom@6
+- Implementación de ruteo dinámico con react-router-dom@6
 - Uso de estado local para gestionar favoritos
 - Consumo eficiente de la PokeAPI usando fetch
 - Diseño mobile-first con Tailwind CSS
